@@ -1,5 +1,3 @@
 <resources>
     <string name="app_name">SocialLoginHTMLit</string>
-    <string name="com.twitter.sdk.android.CONSUMER_KEY">O4vU6hLMWS0AyAUfwghwydVpZ</string>
-    <string name="com.twitter.sdk.android.CONSUMER_SECRET">rVefL1c4foFzPkyypJ48xP0l2NfaCu594YBySsxyGIwqjpNYE7</string>
 </resources>
