@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "877271852566",
+    "project_id": "socialloginhtmlit"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877271852566:android:4d96404b3e27d958",
+        "android_client_info": {
+          "package_name": "it.antedesk.socialloginhtmlit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877271852566-rug7gdlkfi0de3dojj98k7lghrotr19a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "877271852566-itvjiuv0gsbs4fpt0pjmamrv6vrtt63q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.antedesk.socialloginhtmlit",
+            "certificate_hash": "367dc0f0c61748e736ab1cf0f80a40ad9dd99669"
+          }
+        },
+        {
+          "client_id": "877271852566-np8ltdrfnbuu6s6aav330j561p9tedfg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.antedesk.socialloginhtmlit",
+            "certificate_hash": "44b6e7eed0d93a758e4e5814ce14172c2d8780ad"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkUaEOqvtfmKKoZCvY-OB9Rhy83Va0pBE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
