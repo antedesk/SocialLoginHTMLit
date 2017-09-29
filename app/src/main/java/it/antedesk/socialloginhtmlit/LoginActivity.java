@@ -31,7 +31,6 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mStatusTextView = (TextView)findViewById(R.id.status);
 
         // Button listeners
         findViewById(R.id.google_login_button).setOnClickListener(this);
@@ -43,10 +42,8 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 .requestEmail()
                 .build();
 
-        // Build a GoogleApiClient with access to the Google Sign-In API and the
-        // options specified by gso.
         mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
+                .enableAutoManage(this, this)
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
     }
@@ -57,7 +54,6 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
             findViewById(R.id.google_login_button).setVisibility(View.GONE);
             findViewById(R.id.sign_out_and_disconnect).setVisibility(View.VISIBLE);
         } else {
-            mStatusTextView.setText(R.string.signed_out);
 
             Log.i("UPDATEUI", "SIGNED OUT");
             findViewById(R.id.google_login_button).setVisibility(View.VISIBLE);
@@ -70,7 +66,6 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         if (result.isSuccess()) {
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
-            mStatusTextView.setText(getString(R.string.signed_in_fmt, acct.getDisplayName()));
 
             Log.i("mStatusTextView", getString(R.string.signed_in_fmt, acct.getDisplayName()));
             updateUI(true);
