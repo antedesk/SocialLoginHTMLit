@@ -31,13 +31,11 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
         // Button listeners
         findViewById(R.id.google_login_button).setOnClickListener(this);
         findViewById(R.id.google_logout_button).setOnClickListener(this);
         findViewById(R.id.disconnect_button).setOnClickListener(this);
-
-
+        
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
@@ -50,12 +48,9 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
     private void updateUI(boolean signedIn) {
         if (signedIn) {
-            Log.i("UPDATEUI", "SIGNED IN");
             findViewById(R.id.google_login_button).setVisibility(View.GONE);
             findViewById(R.id.sign_out_and_disconnect).setVisibility(View.VISIBLE);
         } else {
-
-            Log.i("UPDATEUI", "SIGNED OUT");
             findViewById(R.id.google_login_button).setVisibility(View.VISIBLE);
             findViewById(R.id.sign_out_and_disconnect).setVisibility(View.GONE);
         }
@@ -66,14 +61,10 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         if (result.isSuccess()) {
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
-
-            Log.i("mStatusTextView", getString(R.string.signed_in_fmt, acct.getDisplayName()));
             updateUI(true);
         } else {
             // Signed out, show unauthenticated UI.
             updateUI(false);
-            Log.i("mStatusTextView", "");
-
         }
     }
 
@@ -100,9 +91,8 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 new ResultCallback<Status>() {
                     @Override
                     public void onResult(Status status) {
-                        // [START_EXCLUDE]
+                        // remove the user data that you saved for your application
                         updateUI(false);
-                        // [END_EXCLUDE]
                     }
                 });
     }
