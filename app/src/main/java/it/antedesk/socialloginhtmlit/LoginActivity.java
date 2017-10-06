@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         findViewById(R.id.google_login_button).setOnClickListener(this);
         findViewById(R.id.google_logout_button).setOnClickListener(this);
         findViewById(R.id.disconnect_button).setOnClickListener(this);
-        
+
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
