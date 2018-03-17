@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SocialLoginHTMLit.iml" filepath="$PROJECT_DIR$/SocialLoginHTMLit.iml" />
+      <module fileurl="file://C:\Users\Antedesk\Dropbox\Personale\Android Projects\SocialLoginHTMLit\SocialLoginHTMLit.iml" filepath="C:\Users\Antedesk\Dropbox\Personale\Android Projects\SocialLoginHTMLit\SocialLoginHTMLit.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Antedesk\Dropbox\Personale\Android Projects\SocialLoginHTMLit\app\app.iml" filepath="C:\Users\Antedesk\Dropbox\Personale\Android Projects\SocialLoginHTMLit\app\app.iml" />
     </modules>
   </component>
 </project>
