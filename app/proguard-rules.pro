@@ -23,3 +23,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# uncomment them if you use Proguard and the FirebaseAuth service
+#-keepattributes Signature
+#-keepattributes *Annotation*
