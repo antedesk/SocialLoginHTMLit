@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SocialLoginHTMLit</string>
+    <string name="facebook_app_id">118446748837203</string>
+    <string name="fb_login_protocol_scheme">fb118446748837203</string>
+    <string name="username">Username</string>
+    <string name="log_out">Log out</string>
+    <string name="loading">Loading ...</string>
 </resources>
