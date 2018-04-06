@@ -29,8 +29,6 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserInfo;
 import com.squareup.picasso.Picasso;
 
-import java.util.List;
-
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
