@@ -136,12 +136,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             String imageUrl = user.getPhotoUrl().toString();  // image size small
             // workaround to get a bigger image for our imageview
             imageUrl = imageUrl.replace("/s96-c/","/s200-c/");
-            String userId = "";
-            for(UserInfo profile : user.getProviderData()){
-                if(FacebookAuthProvider.PROVIDER_ID.equals(profile.getProviderId())) {
-                    userId = profile.getUid();
-                }
-            }
 
             Log.d(TAG, imageUrl);
             Picasso.with(this)
