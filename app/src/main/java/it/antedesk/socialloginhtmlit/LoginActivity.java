@@ -146,11 +146,11 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
 
             mUserNameTV.setText(user.getDisplayName());
             String imageUrl = user.getPhotoUrl().toString();  // image size small
-
+            imageUrl = imageUrl.replace("_normal", "");
             Log.d(TAG, imageUrl);
             Picasso.with(this)
                     .load(imageUrl)
-                    // image powered by Grace Baptist (http://gbchope.com/events-placeholder/)
+                     //image powered by Grace Baptist (http://gbchope.com/events-placeholder/)
                    // .placeholder(R.drawable.placeholder)
                     .into(mUserImageIV);
         } else {
