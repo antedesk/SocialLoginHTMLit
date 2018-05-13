@@ -162,6 +162,7 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
     }
 
     private void signOut() {
+        Log.d("TAG", "signOut pressed");
         mFirebaseAuth.signOut();
         TwitterCore.getInstance().getSessionManager().clearActiveSession();
         updateUI(null);
@@ -186,7 +187,7 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
     @Override
     public void onClick(View v) {
         int i = v.getId();
-        if (i == R.id.bt_log_in) {
+        if (i == R.id.bt_log_out) {
             signOut();
         }
     }
